@@ -2,4 +2,4 @@
 VUTBR-DE1
 
 
-## Kapitola 1.
+## *Kapitola 1.*
