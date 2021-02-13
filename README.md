@@ -1,6 +1,6 @@
 # Digital-Electronics-1
 VUTBR-DE1
-
+<div align="center">Vítejte
 
 ## *Kapitola 1.*
 * Item 1
