@@ -1,4 +1,4 @@
-<div align="left">VUTBR-DE1</div>
+<div align="left">VUTBR-DE1</div><div align="right">Kryštof Buroň</div>
 
 
 # Digital-Electronics-1
