@@ -1,7 +1,4 @@
-<div align="left">VUTBR-DE1</div><div align="right">Kryštof Buroň</div>
-
-
-<div style="text-align:center"><span style="color:red; font-family:Georgia; font-size:2em;">The goal of the Women’s Enterprise Action Loan Fund, (WEALF): helping women business owners become financially self-sufficient.</span></div>
+<div align="left">VUTBR-DE1</div><div align="right">Kryštof Buroň, 221441</div>
 
 # Digital-Electronics-1
 VUTBR-DE1
