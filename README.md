@@ -3,7 +3,7 @@
 # Digital-Electronics-1
 
 
-## *O1-Gates*
+## *01-Gates*
 * Item 1
 * Item 2
   * Item 2a
