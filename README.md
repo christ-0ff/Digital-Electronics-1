@@ -1,9 +1,8 @@
 <div align="left">VUTBR-DE1</div><div align="right">Kryštof Buroň, 221441</div>
 
-# Digital-Electronics-1
-
-
-## *01-Gates*
+# Digital Electronics 1
+## Laboratoře
+*01-Gates*
 Code:
 ```
 HERE GOES CODE
