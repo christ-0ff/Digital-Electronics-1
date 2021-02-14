@@ -1,5 +1,6 @@
+<div align="left">VUTBR-DE1</div><div align="right">Kryštof Buroň, 221441</div>
+
 # Digital-Electronics-1
-VUTBR-DE1
 
 
 ## *Kapitola 1.*
