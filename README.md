@@ -6,7 +6,8 @@
 ## *01-Gates*
 Code:
 ```
-a
+HERE GOES CODE
+
 
 ```
 * Item 2
