@@ -2,7 +2,7 @@
 
 # Digital Electronics 1
 ## Laboratoře
-*01-Gates*
+### *01-Gates*
 Code:
 ```
 HERE GOES CODE
