@@ -3,7 +3,7 @@
 # Digital-Electronics-1
 
 
-## *Kapitola 1.*
+## *O1-Gates*
 * Item 1
 * Item 2
   * Item 2a
