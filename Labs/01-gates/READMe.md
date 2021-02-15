@@ -27,6 +27,7 @@ https://www.edaplayground.com/x/uq2V
 | 1 | 0 | 1 | 1 |
 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 |
+
 *Výsledky pro všechny tři funkce by měli být stejné, a proto stačí vypsat pouze jeden sloupec výstupních.* 
 
 
