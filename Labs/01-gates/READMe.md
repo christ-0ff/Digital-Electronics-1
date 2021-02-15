@@ -1,5 +1,7 @@
 # 01-Gates
 ## 2. De Morganovy zákony:
+*Na funkci f aplikujeme De Morganovy zákony tak, aby se v nich vyskytoval pouze jeden typ operace. Takže buď operace OR nebo AND.*
+
 ### Zdrojový kód:
 ```
 f_o  <= ((not b_i) and a_i) or ((not c_i) and (not b_i));
@@ -8,10 +10,12 @@ fnor_o <= not(b_i or (not a_i)) or not(c_i or b_i);
 ```
 ### Obrázek:
 ![De Morganovy zákony](Images/DeMorg.png)
+*Všechny funkce by se měli rovnat stejně, a podle výsledků na obrázku se rovnají stejně.*
 
 ### Link: 
 https://www.edaplayground.com/x/uq2V
 
+*Výsledky pro všechny tři funkce by měli být stejné, a proto stačí vypsat pouze jeden sloupec výstupních.* 
 ### Tabulka hodnot:
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
@@ -24,6 +28,7 @@ https://www.edaplayground.com/x/uq2V
 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 |
 ## 3. Distributivní zákony:
+*Návzájem se rovnající distributivní funkce rozepíšeme do čtyř parciálních funkcí, a výsledky jedntlivých funkcí porovnáme.* 
 ### Zdrojový kód:
 ```
 f1_o  <= (x_i and y_i) or (x_i and z_i) ;
@@ -31,8 +36,10 @@ f2_o  <= x_i and (y_i or z_i);
 f3_o  <= (x_i or y_i) and (x_i or z_i);
 f4_o  <= x_i or (y_i and z_i);
 ```
+
 ### Obrázek:
 ![Distributivní zákony](Images/Dis.png)
+*Musí platit f1 = f2, a f3 = f4. Což je podle obrázku splněno.*
 
 ### Link:
 https://www.edaplayground.com/x/SaUt
