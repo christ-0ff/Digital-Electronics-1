@@ -1,12 +1,12 @@
 # 01-Gates
-## 1. Link do Digital-Electronics-1 depozitáře
-*Link do rootu depozitáře Digital-Electronics-1*
 
+## 1. Link do Digital-Electronics-1 depozitáře
+
+*Link do rootu depozitáře Digital-Electronics-1*
 
 [The GitHub Link](https://github.com/christ-0ff/Digital-Electronics-1)
 
 ## 2. De Morganovy zákony:
-
 
 ### Zdrojový kód:
 ```
@@ -15,6 +15,7 @@ fnand_o <= not(not((not b_i) and a_i) and not((not c_i) and (not b_i)));
 fnor_o <= not(b_i or (not a_i)) or not(c_i or b_i);
 ```
 *Na funkci f aplikujeme De Morganovy zákony tak, aby se v nich vyskytoval pouze jeden typ operace. Takže buď operace OR nebo AND.*
+
 ### Obrázek:
 ![De Morganovy zákony](Images/DeMorg.png)
 *Všechny funkce by se měli rovnat stejně, a podle výsledků na obrázku se rovnají stejně.*
