@@ -21,7 +21,7 @@ fnor_o <= not(b_i or (not a_i)) or not(c_i or b_i);
 *Všechny funkce by se měli rovnat stejně, a podle výsledků na obrázku se rovnají stejně.*
 
 ### Link: 
-[The GitHub Link](https://www.edaplayground.com/x/uq2V)
+[The EDA-Playground Link](https://www.edaplayground.com/x/uq2V)
 
 ### Tabulka hodnot:
 | **c** | **b** |**a** | **f(c,b,a)** |
@@ -54,4 +54,4 @@ f4_o  <= x_i or (y_i and z_i);
 *Musí platit f1 = f2, a f3 = f4. Což je podle obrázku splněno.*
 
 ### Link:
-[The GitHub Link](https://www.edaplayground.com/x/SaUt)
+[The EDA-Playground Link](https://www.edaplayground.com/x/SaUt)
