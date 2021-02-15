@@ -1,5 +1,5 @@
 # 01-Gates
-## 2. De Morganovy zákony funkce f:
+## 2. De Morganovy zákony:
 ### Zdrojový kód:
 ```
 f_o  <= ((not b_i) and a_i) or ((not c_i) and (not b_i));
