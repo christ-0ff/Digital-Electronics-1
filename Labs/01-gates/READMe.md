@@ -1,4 +1,4 @@
-# Laboratoře 01-Gates
+# 01-Gates
 ## 2. De Morganovy zákony funkce f:
 ### Zdrojový kód:
 ```
