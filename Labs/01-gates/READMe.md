@@ -2,8 +2,6 @@
 
 ## 1. Link do Digital-Electronics-1 depozitáře
 
-*Link do rootu depozitáře Digital-Electronics-1*
-
 [The GitHub Link](https://github.com/christ-0ff/Digital-Electronics-1)
 
 ## 2. De Morganovy zákony:
