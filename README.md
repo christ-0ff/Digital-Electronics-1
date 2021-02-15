@@ -20,7 +20,7 @@ HERE GOES CODE
 >“The philosopher Didactylos has summed up an alternative hypothesis as "Things just happen. What the hell".”
 
 ### Link to this GitHub:
-[The GitHub](https://github.com/christ-0ff/Digital-Electronics-1)
+[The GitHub Link](https://github.com/christ-0ff/Digital-Electronics-1)
 
 ### Tasks:
 - [x] :man_student: 
