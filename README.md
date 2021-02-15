@@ -1,5 +1,4 @@
-<div align="left">VUTBR-DE1</div><div align="right">Kryštof Buroň, 221441</div>
-<div align="center">Depozitář pro předmět digitální elektronika 1.</div>
+<div align="right">Kryštof Buroň, 221441</div>
 
 # Digital Electronics 1
 
