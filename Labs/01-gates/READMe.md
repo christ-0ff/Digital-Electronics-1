@@ -39,7 +39,7 @@ fnor_o <= not(b_i or (not a_i)) or not(c_i or b_i);
 ## 3. Distributivní zákony:
 
 ### Zdrojový kód:
-```
+```vhdl
 f1_o  <= (x_i and y_i) or (x_i and z_i) ;
 f2_o  <= x_i and (y_i or z_i);
 f3_o  <= (x_i or y_i) and (x_i or z_i);
