@@ -49,7 +49,7 @@ f4_o  <= x_i or (y_i and z_i);
 
 ### Obrázek:
 ![Distributivní zákony](Images/Dis.png)
-*Musí platit f1 = f2, a f3 = f4. Což je podle obrázku splněno.*
+*Musí platit f1 = f2, a f3 = f4. Což je podle obrázku splněno*
 
 ### Link:
 [The EDA-Playground Link](https://www.edaplayground.com/x/SaUt)
