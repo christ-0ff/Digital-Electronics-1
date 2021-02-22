@@ -161,7 +161,7 @@ end architecture testbench;
 ```
 
 ### 3. Console output
-```vhdl
+```console
 analyze design.vhd
 analyze testbench.vhd
 elaborate tb_comparator_2bit
