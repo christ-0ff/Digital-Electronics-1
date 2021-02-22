@@ -30,7 +30,7 @@
 ## 2. A 2-bit comparator:
 
 ### 1. B equals A
-![B=A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/b=a.png)
+![B=A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/equals.png)
 
 $$
 B=A_{SoP}^{canon.}=(\overline{a_1}\cdot\overline{a_0}\cdot\overline{b_1}\cdot\overline{b_0})+(\overline{a_1}\cdot a_0\cdot\overline{b_1}\cdot b_0)+(\overline{a_0}\cdot a_1\cdot\overline{b_0}\cdot b_1)+(a_1\cdot a_0\cdot b_1\cdot b_0)
@@ -40,7 +40,7 @@ $$
 
 ### 1. B is greater than A
 
-![B>A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/b>a.png)
+![B>A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/greater.png)
 
 $$
 B>A_{SoP}^{min}=(\overline{a_1}\cdot b_1)+(\overline{a_1}\cdot\overline{a_0}\cdot b_0)+(\overline{a_0}\cdot b_0 \cdot b_1)
@@ -48,7 +48,7 @@ $$
 
 ### 2. B is less than A
 
-![B<A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/b<a.png)
+![B<A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/less.png)
 
 **Diminished version**
 $$
