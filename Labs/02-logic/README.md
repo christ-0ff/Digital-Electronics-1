@@ -142,7 +142,7 @@ begin
         -- If false, then report an error
         report "Test failed for input combination: 0000, 0000" severity error;
                 
-        --I've skipped other 9 values to save some space...
+        --I've skipped other values to save some space...
         
         -- Error test values
         s_b <= "0011"; s_a <= "0011"; wait for 100 ns;
