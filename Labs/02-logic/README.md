@@ -10,7 +10,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 ## 1. Truth table
 
-1. **Completed 2-bit comparator truth table**
+**Completed 2-bit comparator truth table**
 
 | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B > A** | **B = A** | **B < A** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -35,21 +35,22 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 ## 2. A 2-bit comparator
 
-1. **B equals A**
+### 1. B equals A
+
 ![B=A](images/equals.png)
 
 ![B=A](images/equals_canon.png)
 
 
 
-2. **B is greater than A**
+### 2. B is greater than A
 
 ![B>A](images/greater.png)
 
 ![B=A](images/greater_min.png)
 
 
-3. **B is less than A**
+### 3. B is less than A
 
 ![B<A](images/less.png)
 
@@ -62,7 +63,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 ![B=A](images/less_canon.png)
 
 
-4. **Link for EDA Playground**
+### 4. Link for EDA Playground
 
 https://www.edaplayground.com/x/74HF
 
