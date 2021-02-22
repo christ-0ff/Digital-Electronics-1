@@ -30,35 +30,29 @@
 ## 2. A 2-bit comparator:
 
 ### 1. B equals A
-![B=A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/equals.png)
+![B=A](images/equals.png)
 
-$$
-B=A_{SoP}^{canon.}=(\overline{a_1}\cdot\overline{a_0}\cdot\overline{b_1}\cdot\overline{b_0})+(\overline{a_1}\cdot a_0\cdot\overline{b_1}\cdot b_0)+(\overline{a_0}\cdot a_1\cdot\overline{b_0}\cdot b_1)+(a_1\cdot a_0\cdot b_1\cdot b_0)
-$$
+![B=A](images/equals_canon.png)
 
 
 
 ### 1. B is greater than A
 
-![B>A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/greater.png)
+![B>A](images/greater.png)
 
-$$
-B>A_{SoP}^{min}=(\overline{a_1}\cdot b_1)+(\overline{a_1}\cdot\overline{a_0}\cdot b_0)+(\overline{a_0}\cdot b_0 \cdot b_1)
-$$
+![B=A](images/greater_min.png)
 
 ### 2. B is less than A
 
-![B<A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/less.png)
+![B<A](images/less.png)
 
 **Diminished version**
-$$
-B<A_{PoS}^{min}=(\overline{b_1}+\overline{b_0})\cdot(a_0+\overline{b_1})\cdot(a_1+\overline{b_1})\cdot(a_1+\overline{b_0})\cdot(a_0+a_1)
-$$
+
+![B=A](images/less_min.png)
 
 **Canonical version**
-$$
-B<A_{SoP}^{canon.}=(a_1+ a_0+b_1 + b_0)\cdot(a_1+ a_0+b_1 + \overline{b_0})\cdot(a_1+ \overline{a_0}+b_1 + \overline{b_0})\cdot(a_1+ a_0+\overline{b_1} + b_0)\cdot(a_1+ \overline{a_0}+\overline{b_1} + b_0)\cdot(\overline{a_1}+ a_0+\overline{b_1} + b_0)\cdot(a_1+ a_0+\overline{b_1} + \overline{b_0})\cdot(a_1+ \overline{a_0}+\overline{b_1} + \overline{b_0})\cdot(\overline{a_1}+ a_0+\overline{b_1} + \overline{b_0})\cdot(\overline{a_1}+ \overline{a_0}+\overline{b_1} + \overline{b_0})
-$$
+
+![B=A](images/less_canon.png)
 
 
 ### 3. Link for EDA Playground
