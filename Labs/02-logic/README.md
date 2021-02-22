@@ -162,14 +162,14 @@ end architecture testbench;
 
 ### 3. Console output
 
-*analyze design.vhd
-*analyze testbench.vhd
-*elaborate tb_comparator_2bit
-*testbench.vhd:45:9:@0ms:(report note): Stimulus process started
-*testbench.vhd:123:9:@1100ns:(assertion error): Test failed for input combination: 0011, 0011
-*testbench.vhd:129:9:@1100ns:(report note): Stimulus process finished
-*Finding VCD file...
-*./dump.vcd
+analyze design.vhd
+analyze testbench.vhd
+elaborate tb_comparator_2bit
+testbench.vhd:45:9:@0ms:(report note): Stimulus process started
+testbench.vhd:123:9:@1100ns:(assertion error): Test failed for input combination: 0011, 0011
+testbench.vhd:129:9:@1100ns:(report note): Stimulus process finished
+Finding VCD file...
+./dump.vcd
 
 ### 4. EDA Playground link
 
