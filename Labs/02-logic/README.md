@@ -158,7 +158,7 @@ begin
 end architecture testbench;
 ```
 
- 3. **Console output**
+ 3. **Simulator console output**
 ```console
 analyze design.vhd
 analyze testbench.vhd
