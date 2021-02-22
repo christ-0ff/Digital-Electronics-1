@@ -43,14 +43,14 @@
 
 
 
-### 1. B is greater than A
+### 2. B is greater than A
 
 ![B>A](images/greater.png)
 
 ![B=A](images/greater_min.png)
 
 
-### 2. B is less than A
+### 3. B is less than A
 
 ![B<A](images/less.png)
 
@@ -63,7 +63,7 @@
 ![B=A](images/less_canon.png)
 
 
-### 3. Link for EDA Playground
+### 4. Link for EDA Playground
 
 [The EDA Playground Link](https://www.edaplayground.com/x/74HF)
 
@@ -74,3 +74,104 @@ https://www.edaplayground.com/x/74HF
 
 
 ## 3. A 4-bit comparator:
+
+### 1. Design - Entity declaration & Architecture body 
+```vhdl
+-- Entity declaration for 2-bit binary comparator
+
+entity comparator_2bit is
+    port(
+        a_i             : in  std_logic_vector(4 - 1 downto 0);
+        b_i             : in  std_logic_vector(4 - 1 downto 0);
+        --
+        B_greater_A_o   : out std_logic;
+        B_equals_A_o    : out std_logic;
+        B_less_A_o      : out std_logic       
+    );
+end entity comparator_2bit;
+
+
+-- Architecture body for 2-bit binary comparator
+
+architecture Behavioral of comparator_2bit is
+begin
+
+    B_greater_A_o  <= '1' when (b_i > a_i) else '0';
+    B_equals_A_o   <= '1' when (b_i = a_i) else '0';
+    B_less_A_o     <= '1' when (b_i < a_i) else '0';
+
+end architecture Behavioral;
+```
+### 2. Stimulus process from testbench file  
+```vhdl
+-- Architecture body for testbench
+
+architecture testbench of tb_comparator_2bit is
+
+    -- Local signals
+    signal s_a       : std_logic_vector(4 - 1 downto 0);
+    signal s_b       : std_logic_vector(4 - 1 downto 0);
+    signal s_B_greater_A : std_logic;
+    signal s_B_equals_A  : std_logic;
+    signal s_B_less_A    : std_logic;
+
+begin
+    -- Connecting testbench signals with comparator_2bit entity (Unit Under Test)
+    uut_comparator_2bit : entity work.comparator_2bit
+        port map(
+            a_i           => s_a,
+            b_i           => s_b,
+            B_greater_A_o => s_B_greater_A,
+            B_equals_A_o  => s_B_equals_A,
+            B_less_A_o    => s_B_less_A
+        );
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        -- Report a note at the begining of stimulus process
+        report "Stimulus process started" severity note;
+
+
+        -- 1st test values
+        s_b <= "0000"; s_a <= "0000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0000, 0000" severity error;
+                
+        --I've skipped other 9 values to save some space...
+        
+        -- Error test values
+        s_b <= "0011"; s_a <= "0011"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0011, 0011" severity error;
+        
+        -- Report a note at the end of stimulus process
+        report "Stimulus process finished" severity note;
+        wait;
+        
+    end process p_stimulus;
+
+end architecture testbench;
+```
+
+### 3. Console output
+
+>analyze design.vhd
+>analyze testbench.vhd
+>elaborate tb_comparator_2bit
+>testbench.vhd:45:9:@0ms:(report note): Stimulus process started
+>testbench.vhd:123:9:@1100ns:(assertion error): Test failed for input combination: 0011, 0011
+>testbench.vhd:129:9:@1100ns:(report note): Stimulus process finished
+>Finding VCD file...
+>./dump.vcd
+
+### 4. EDA Playground link
+
+[The EDA Playground Link](https://www.edaplayground.com/x/p84g)
+https://www.edaplayground.com/x/p84g
