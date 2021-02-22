@@ -42,14 +42,10 @@
 
 ![B=A](images/greater_min.png)
 
+
 ### 2. B is less than A
 
-
 ![B<A](images/less.png)
-
-![B<A](/Digital-Electronics-1/Labs/02-logic/images/less.png)
-
-![B<A](/Users/krystufek/Documents/Digital-Electronics-1/Labs/02-logic/images/less.png)
 
 **Diminished version**
 
@@ -66,3 +62,5 @@
 
 https://www.edaplayground.com/x/74HF
 
+
+## 3. A 4-bit comparator:
