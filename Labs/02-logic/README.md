@@ -1,6 +1,7 @@
 
 
-**Link to this page:**https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
+**Link to this page**
+https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 # 02-Logic
 
