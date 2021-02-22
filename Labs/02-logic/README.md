@@ -44,7 +44,11 @@
 
 ### 2. B is less than A
 
+<<<<<<< HEAD
 ![B<A](images/less.png)
+=======
+![B<A](/Digital-Electronics-1/Labs/02-logic/images/less.png)
+>>>>>>> 198d3ec7454f032deb30c7dbbdf9f5be6dd46a63
 
 **Diminished version**
 
