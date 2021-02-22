@@ -66,8 +66,6 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 ### 4. Link for EDA Playground
 
-[The EDA Playground Link](https://www.edaplayground.com/x/74HF)
-
 https://www.edaplayground.com/x/74HF
 
 
@@ -175,5 +173,4 @@ Finding VCD file...
 
 ### 4. EDA Playground link
 
-[The EDA Playground Link](https://www.edaplayground.com/x/p84g)
 https://www.edaplayground.com/x/p84g
