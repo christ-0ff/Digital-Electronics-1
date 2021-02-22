@@ -8,7 +8,9 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 
 
-## 1. Truth table:
+## 1. Truth table
+
+1. **Completed 2-bit comparator truth table**
 
 | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B > A** | **B = A** | **B < A** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -31,27 +33,23 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 
 
+## 2. A 2-bit comparator
 
-
-
-
-## 2. A 2-bit comparator:
-
-### 1. B equals A
+1. **B equals A**
 ![B=A](images/equals.png)
 
 ![B=A](images/equals_canon.png)
 
 
 
-### 2. B is greater than A
+2. **B is greater than A**
 
 ![B>A](images/greater.png)
 
 ![B=A](images/greater_min.png)
 
 
-### 3. B is less than A
+3. **B is less than A**
 
 ![B<A](images/less.png)
 
@@ -64,7 +62,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 ![B=A](images/less_canon.png)
 
 
-### 4. Link for EDA Playground
+4. **Link for EDA Playground**
 
 https://www.edaplayground.com/x/74HF
 
@@ -74,7 +72,7 @@ https://www.edaplayground.com/x/74HF
 
 ## 3. A 4-bit comparator:
 
-### 1. Design - Entity declaration & Architecture body 
+1. **Design - Entity declaration & Architecture body** 
 ```vhdl
 -- Entity declaration for 2-bit binary comparator
 
@@ -101,7 +99,7 @@ begin
 
 end architecture Behavioral;
 ```
-### 2. Stimulus process from testbench file  
+2. **Stimulus process from testbench file**  
 ```vhdl
 -- Architecture body for testbench
 
@@ -159,7 +157,7 @@ begin
 end architecture testbench;
 ```
 
-### 3. Console output
+ 3. **Console output**
 ```console
 analyze design.vhd
 analyze testbench.vhd
@@ -171,6 +169,6 @@ Finding VCD file...
 ./dump.vcd
 ``` 
 
-### 4. EDA Playground link
+4. **EDA Playground link**
 
 https://www.edaplayground.com/x/p84g
