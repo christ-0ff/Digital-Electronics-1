@@ -33,7 +33,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 ## 2. A 2-bit comparator
 
-### 1. B equals A
+1. **B equals A**
 
 ![B=A](images/equals.png)
 
@@ -41,7 +41,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
   
 
 
-### 2. B is greater than A
+2. **B is greater than A**
 
 ![B>A](images/greater.png)
 
@@ -49,7 +49,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
   
 
 
-### 3. B is less than A
+ 3. **B is less than A**
 
 ![B<A](images/less.png)
 
@@ -63,7 +63,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 
 
-### 4. Link for EDA Playground
+ 4. **Link for EDA Playground**
 
 https://www.edaplayground.com/x/74HF
 
