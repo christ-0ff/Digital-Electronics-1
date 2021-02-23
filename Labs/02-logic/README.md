@@ -28,7 +28,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-&nbsp;  
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
 
 
 ## 2. A 2-bit comparator
@@ -59,13 +59,12 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 **Canonical version**
 
 ![B=A](images/less_canon.png)
-&nbsp;  
+
 
 ### 4. Link for EDA Playground
 
 https://www.edaplayground.com/x/74HF
-&nbsp;  
-&nbsp;  &nbsp;  &nbsp;  &nbsp;  
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
 
 
 
