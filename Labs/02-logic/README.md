@@ -65,7 +65,7 @@ https://github.com/christ-0ff/Digital-Electronics-1/tree/main/Labs/02-logic
 
 https://www.edaplayground.com/x/74HF
 &nbsp;  
-
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  
 
 
 
