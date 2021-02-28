@@ -1,12 +1,12 @@
 # 03-Vivado
 List of content:
-[1. Connections of LEDs and switches to pins](#1.connections-of-LEDs-and-switches-to-pins)
+[1. Connections of LEDs and switches to pins](#connections-of-LEDs-and-switches-to-pins)
 
-[2. Two-bit wide 4-to-1 multiplexer.](#2.Two-bit-wide-4-to-1-multiplexer)
+[2. Two-bit wide 4-to-1 multiplexer.](#Two-bit-wide-4-to-1-multiplexer)
 
-[3. Vivado tutorial](#3.Vivado-tutorial)
+[3. Vivado tutorial](#Vivado-tutorial)
    
-## 1.Connections of LEDs and switches to pins
+## Connections of LEDs and switches to pins
 ```
 Switches:                                    LEDs:
 Switch 00 => J15                             LED 00 => H17
@@ -28,7 +28,7 @@ Switch 15 => V10                             LED 15 => V11
 ```
 
 
-## 2.Two-bit wide 4-to-1 multiplexer
+## Two-bit wide 4-to-1 multiplexer
 
 **VHDL Architecture of mux_2bit_4to1**
 ```vhdl
@@ -123,7 +123,7 @@ end process p_stimulus;
 ![Waveforms](Images/waveforms.png)
 
 
-## 3.Vivado tutorial
+## Vivado tutorial
 **Links for each tutorial:**
 
 [Project creation](#Project-creation)
