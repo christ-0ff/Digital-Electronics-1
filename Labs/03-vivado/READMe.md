@@ -156,7 +156,7 @@ end process p_stimulus;
  
  [Go back button](#Vivado-tutorials)
  
-### **Adding source files**
+### **Adding design source files**
 
 #### 1. *First step:*
 ![](Images/1a.png)
