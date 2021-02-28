@@ -1,14 +1,11 @@
 # 03-Vivado
 List of content:
 [1. Connections of LEDs and switches to pins](#-1.-connections-of-LEDs-and-switches-to-pins)
+
 [2. Two-bit wide 4-to-1 multiplexer.](#2.-Two-bit-wide-4-to-1-multiplexer)
+
 [3. Vivado tutorial](#Vivado-tutorial)
-   [   Project creation](#Project-creation)
-   [   Adding testbench files](#Adding-testbench-files)
-   [   Running simulation](#Running-simulation)
-   [   Adding XDC constraints files](#Adding-XDC-constraints-files)
-
-
+   
 ## 1. Connections of LEDs and switches to pins
 ```
 Switches:                                    LEDs:
@@ -127,6 +124,14 @@ end process p_stimulus;
 
 
 ## Vivado tutorial
+**Links for each tutorial:**
+[Project creation](#Project-creation)
+
+[Adding testbench files](#Adding-testbench-files)
+
+[Running simulation](#Running-simulation)
+
+[Adding XDC constraints files](#Adding-XDC-constraints-files)
 
 ### **Project creation**
 
