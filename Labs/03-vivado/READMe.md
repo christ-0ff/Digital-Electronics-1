@@ -120,10 +120,10 @@ end process p_stimulus;
 
 ## 3. Vivado tutorial
 
-**Project creation**
+### **Project creation**
 
 #### 1. *First step:*
-#### ![](Images/1.png)
+![](Images/1.png)
 #### 2. *Naming project:*
 ![](Images/2.png)
 #### 3. *Project type selection:*
@@ -135,14 +135,25 @@ end process p_stimulus;
  #### 6. *Finishing:*
  ![](Images/8.png)
  #### 7. *On this summary page just click on **Finish** button*:
+ ![](Images/4.png)
+ 
+ 
+### **Adding source files**
 
-**Adding source files**
+#### 1. *First step:*
+![](Images/1a.png)
+#### 2. *Source selection:*
+![](Images/2d.png)
+#### 3. *Source file addition:*
+![](Images/3d.png)
+#### 4. *Modul definition:*
+![](Images/4d.png)
+#### 5. *Making sure everythink is added:*
+![](Images/5d.png)
 
+### **Adding testbench files**
 
+### **Running simulation**
 
-**Adding testbench files**
-
-**Running simulation**
-
-**Adding XDC constraints files**
+### **Adding XDC constraints files**
 
