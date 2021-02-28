@@ -123,20 +123,23 @@ end architecture Behavioral;
 **Project creation**
 
 
-1.
+1. First step
 ![](Images/1.png)
-2.
+2. Naming project:
 ![](Images/2.png)
-3.
+3. Project type selection:
 ![](Images/3.png)
-4.
+4. We can skip this step and add source files later.
  ![](Images/5.png)
-5.
+5. We can skip this step and add constraints files later.
  ![](Images/6.png)
-6.
+6. Finishing 
  ![](Images/8.png)
+ 
+7. *On this summary page just click on**Finish**button*
 
 **Adding source files**
+
 **Adding testbench files**
 **Running simulation**
 **Adding XDC constraints files**
