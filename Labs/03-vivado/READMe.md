@@ -1,5 +1,6 @@
 # 03-Vivado
-List of content:
+**List of content:**
+
 [1. Connections of LEDs and switches to pins](#connections-of-LEDs-and-switches-to-pins)
 
 [2. Two-bit wide 4-to-1 multiplexer.](#Two-bit-wide-4-to-1-multiplexer)
@@ -123,7 +124,7 @@ end process p_stimulus;
 ![Waveforms](Images/waveforms.png)
 
 
-## Vivado tutorial
+## Vivado tutorials
 **Links for each tutorial:**
 
 [Project creation](#Project-creation)
