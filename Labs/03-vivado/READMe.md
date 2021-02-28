@@ -136,11 +136,13 @@ end architecture Behavioral;
 6. Finishing 
  ![](Images/8.png)
  
-7. *On this summary page just click on**Finish**button*
+7. *On this summary page just click on **Finish** button*
 
 **Adding source files**
 
 **Adding testbench files**
+
 **Running simulation**
+
 **Adding XDC constraints files**
 
