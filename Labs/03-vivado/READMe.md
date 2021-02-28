@@ -23,7 +23,7 @@ Switch 15 => V10                             LED 15 => V11
 ```
 
 
-## 2.
+## 2. Two-bit wide 4-to-1 multiplexer.
 **VHDL Architecture of mux_2bit_4to1**
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
@@ -119,4 +119,17 @@ end architecture Behavioral;
 ![Waveforms](Images/waveforms.png)
 
 
-## 3.
+## 3. Vivado tutorial
+**Project creation**
+![](Images/1.png)
+![](Images/2.png)
+![](Images/3.png)
+![](Images/5.png)
+![](Images/6.png)
+![](Images/8.png)
+
+**Adding source files**
+**Adding testbench files**
+**Running simulation**
+**Adding XDC constraints files**
+
