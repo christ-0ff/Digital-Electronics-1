@@ -196,7 +196,11 @@ end process p_stimulus;
 #### 4. *Making sure everythink is added:*
 ![](Images/4c.png)
 
+[Go back button](#Vivado-tutorial)
+
 ### **Running simulation**
 
+#### 1. *First&Last step:*
+![](Images/sim.png)
 
-
+[Go back button](#Vivado-tutorial)
