@@ -5,7 +5,7 @@
 
 [2. Two-bit wide 4-to-1 multiplexer.](#Two-bit-wide-4-to-1-multiplexer)
 
-[3. Vivado tutorial](#Vivado-tutorial)
+[3. Vivado tutorials](#Vivado-tutorials)
    
 ## Connections of LEDs and switches to pins
 ```
