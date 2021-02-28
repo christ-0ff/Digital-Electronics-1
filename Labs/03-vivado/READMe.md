@@ -154,7 +154,7 @@ end process p_stimulus;
  #### 7. *On this summary page just click on **Finish** button*:
  ![](Images/4.png)
  
- [Go back button](#Vivado-tutorial)
+ [Go back button](#Vivado-tutorials)
  
 ### **Adding source files**
 
@@ -169,7 +169,7 @@ end process p_stimulus;
 #### 5. *Making sure everythink is added:*
 ![](Images/5d.png)
 
-[Go back button](#Vivado-tutorial)
+[Go back button](#Vivado-tutorials)
 
 ### **Adding testbench files**
 
@@ -184,7 +184,7 @@ end process p_stimulus;
 #### 5. *Making sure everythink is added:*
 ![](Images/5s.png)
 
-[Go back button](#Vivado-tutorial)
+[Go back button](#Vivado-tutorials)
 
 ### **Adding XDC constraints files**
 
@@ -197,11 +197,11 @@ end process p_stimulus;
 #### 4. *Making sure everythink is added:*
 ![](Images/4c.png)
 
-[Go back button](#Vivado-tutorial)
+[Go back button](#Vivado-tutorials)
 
 ### **Running simulation**
 
 #### 1. *First&Last step:*
 ![](Images/sim.png)
 
-[Go back button](#Vivado-tutorial)
+[Go back button](#Vivado-tutorials)
