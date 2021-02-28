@@ -4,7 +4,7 @@ List of content:
 
 [2. Two-bit wide 4-to-1 multiplexer.](#2.Two-bit-wide-4-to-1-multiplexer)
 
-[3. Vivado tutorial](#Vivado-tutorial)
+[3. Vivado tutorial](#3.Vivado-tutorial)
    
 ## 1.Connections of LEDs and switches to pins
 ```
@@ -123,7 +123,7 @@ end process p_stimulus;
 ![Waveforms](Images/waveforms.png)
 
 
-## Vivado tutorial
+## 3.Vivado tutorial
 **Links for each tutorial:**
 
 [Project creation](#Project-creation)
