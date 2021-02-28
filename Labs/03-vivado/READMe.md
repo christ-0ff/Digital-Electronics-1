@@ -7,7 +7,7 @@
 
 [3. Vivado tutorials](#Vivado-tutorials)
    
-## 1_Connections of LEDs and switches to pins
+## Connections of LEDs and switches to pins
 ```
 Switches:                                    LEDs:
 Switch 00 => J15                             LED 00 => H17
