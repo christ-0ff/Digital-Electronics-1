@@ -1,6 +1,6 @@
 # 03-Vivado
 List of content:
-[1. Connections of LEDs and switches to pins](#1.-connections-of-LEDs-and-switches-to-pins)
+[1. Connections of LEDs and switches to pins](#-1.-connections-of-LEDs-and-switches-to-pins)
 [2. Two-bit wide 4-to-1 multiplexer.](#2.-Two-bit-wide-4-to-1-multiplexer)
 [3. Vivado tutorial](#Vivado-tutorial)
    [   Project creation](#Project-creation)
