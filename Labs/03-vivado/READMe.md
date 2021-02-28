@@ -128,11 +128,13 @@ end process p_stimulus;
 
 [Project creation](#Project-creation)
 
+[Adding source files](#Adding-source-files)
+
 [Adding testbench files](#Adding-testbench-files)
 
-[Running simulation](#Running-simulation)
-
 [Adding XDC constraints files](#Adding-XDC-constraints-files)
+
+[Running simulation](#Running-simulation)
 
 ### **Project creation**
 
@@ -170,7 +172,31 @@ end process p_stimulus;
 
 ### **Adding testbench files**
 
-### **Running simulation**
+#### 1. *First step:*
+![](Images/1a.png)
+#### 2. *Source selection:*
+![](Images/2s.png)
+#### 3. *Source file addition:*
+![](Images/3s.png)
+#### 4. *Modul definition:*
+![](Images/4s.png)
+#### 5. *Making sure everythink is added:*
+![](Images/5s.png)
+
+[Go back button](#Vivado-tutorial)
 
 ### **Adding XDC constraints files**
+
+#### 1. *First step:*
+![](Images/1a.png)
+#### 2. *Source selection:*
+![](Images/2c.png)
+#### 3. *Source file addition:*
+![](Images/3c.png)
+#### 4. *Making sure everythink is added:*
+![](Images/4c.png)
+
+### **Running simulation**
+
+
 
