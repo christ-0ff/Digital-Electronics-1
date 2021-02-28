@@ -24,6 +24,7 @@ Switch 15 => V10                             LED 15 => V11
 
 
 ## 2. Two-bit wide 4-to-1 multiplexer.
+
 **VHDL Architecture of mux_2bit_4to1**
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
@@ -120,25 +121,26 @@ end architecture Behavioral;
 
 
 ## 3. Vivado tutorial
+
 **Project creation**
 
-
-1. First step
-![](Images/1.png)
-2. Naming project:
+#### 1. First step
+#### ![](Images/1.png)
+#### 2. Naming project:
 ![](Images/2.png)
-3. Project type selection:
+#### 3. Project type selection:
 ![](Images/3.png)
-4. We can skip this step and add source files later.
+#### 4. We can skip this step and add source files later.
  ![](Images/5.png)
-5. We can skip this step and add constraints files later.
+ #### 5. We can skip this step and add constraints files later.
  ![](Images/6.png)
-6. Finishing 
+ #### 6. Finishing 
  ![](Images/8.png)
- 
-7. *On this summary page just click on **Finish** button*
+ #### 7. *On this summary page just click on **Finish** button*
 
 **Adding source files**
+
+
 
 **Adding testbench files**
 
