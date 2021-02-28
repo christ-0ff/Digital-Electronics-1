@@ -197,7 +197,7 @@ end process p_stimulus;
 #### 4. *Making sure everythink is added:*
 ![](Images/4c.png)
 #### 5. *Taking right connections*
-*Now we can visit this [website](https://github.com/Digilent/digilent-xdc), find our board (Nexys A7-50T), abd copy whole content to our `nexys-a7-50t.xdc` file.*
+*Now we can visit this [website](https://github.com/Digilent/digilent-xdc), find our board (Nexys A7-50T), and copy whole content to our `nexys-a7-50t.xdc` file.*
 
 ### **Running simulation**
 
