@@ -129,7 +129,7 @@ end process p_stimulus;
 
 [Project creation](#Project-creation)
 
-[Adding source files](#Adding-source-files)
+[Adding source files](#Adding-design-source-files)
 
 [Adding testbench files](#Adding-testbench-files)
 
