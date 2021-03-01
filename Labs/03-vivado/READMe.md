@@ -14,6 +14,7 @@
 **Switches can represent both logical values => their logical value depends on the position of each switch.**
 
 ```
+Table with pin connections:
 Switches:                                    LEDs:
 Switch 00 => J15                             LED 00 => H17
 Switch 01 => L16                             LED 01 => K15
