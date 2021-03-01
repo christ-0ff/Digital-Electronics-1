@@ -63,55 +63,55 @@ begin
                 s_a <= "11"; s_b <= "00"; s_c <= "01"; s_d <= "10";
                 s_sel <= "11";
         wait for 100 ns;
-        
+        --
                 s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11"; 
                 s_sel <= "00";
         wait for 100 ns;
        
                 s_a <= "01"; s_b <= "10"; s_c <= "11"; s_d <= "00"; 
-                s_sel <= "01";
+                s_sel <= "00";
         wait for 100 ns;
         
                 s_a <= "10"; s_b <= "11"; s_c <= "00"; s_d <= "01";
-                s_sel <= "10";
+                s_sel <= "00";
         wait for 100 ns;
         
                 s_a <= "11"; s_b <= "00"; s_c <= "01"; s_d <= "10";
-                s_sel <= "11";
+                s_sel <= "00";
         wait for 100 ns;
-        
+        --
                 s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11"; 
                 s_sel <= "00";
         wait for 100 ns;
        
-                s_a <= "01"; s_b <= "10"; s_c <= "11"; s_d <= "00"; 
+                s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11"; 
                 s_sel <= "01";
         wait for 100 ns;
         
-                s_a <= "10"; s_b <= "11"; s_c <= "00"; s_d <= "01";
+                s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
                 s_sel <= "10";
         wait for 100 ns;
         
-                s_a <= "11"; s_b <= "00"; s_c <= "01"; s_d <= "10";
+                s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
                 s_sel <= "11";
         wait for 100 ns;
-        
+        --
+                s_a <= "11"; s_b <= "00"; s_c <= "01"; s_d <= "10";
+                s_sel <= "11";
+        wait for 100 ns;     
+
+                s_a <= "10"; s_b <= "11"; s_c <= "00"; s_d <= "01";
+                s_sel <= "10";
+        wait for 100 ns;
+  
+                s_a <= "01"; s_b <= "10"; s_c <= "11"; s_d <= "00"; 
+                s_sel <= "01";
+        wait for 100 ns;
+  
                 s_a <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11"; 
                 s_sel <= "00";
-        wait for 100 ns;
-       
-                s_a <= "01"; s_b <= "10"; s_c <= "11"; s_d <= "00"; 
-                s_sel <= "01";
-        wait for 100 ns;
-        
-                s_a <= "10"; s_b <= "11"; s_c <= "00"; s_d <= "01";
-                s_sel <= "10";
-        wait for 100 ns;
-        
-                s_a <= "11"; s_b <= "00"; s_c <= "01"; s_d <= "10";
-                s_sel <= "11";
-        wait for 100 ns;   
-          
+        wait for 100 ns;              
+                     
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
