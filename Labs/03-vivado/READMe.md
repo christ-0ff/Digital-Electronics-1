@@ -8,6 +8,11 @@
 [3. Vivado tutorials](#Vivado-tutorials)
    
 ## Connections of LEDs and switches to pins
+
+**LEDs are active-high => logic value 1 will switch LEDs on.**
+
+**Switches can represent both logical values => their logical value depends on the position of each switch.**
+
 ```
 Switches:                                    LEDs:
 Switch 00 => J15                             LED 00 => H17
