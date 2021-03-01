@@ -15,6 +15,7 @@
 
 ```
 Table with pin connections:
+
 Switches:                                    LEDs:
 Switch 00 => J15                             LED 00 => H17
 Switch 01 => L16                             LED 01 => K15
