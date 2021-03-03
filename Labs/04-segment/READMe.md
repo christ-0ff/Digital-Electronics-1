@@ -13,17 +13,17 @@ The purpose of this laboratory exercise is to design a 7-segment display decoder
 
 The Nexys A7 board provides two four-digit common anode seven-segment LED displays (configured to behave like a single eight-digit display). See schematic or reference manual of the Nexys A7 board and find out the connection of 7-segment displays, ie to which FPGA pins are connected and how.
 
-&nbsp;
+```table
+AN0 => J17                     CA => T10
+AN1 => J18                     CB => R10
+AN2 => T9                      CC => K16
+AN3 => J14                     CD => K13
+AN4 => P14                     CE => P15
+AN5 => T14                     CF => T11
+AN6 => K2                      CG => L18
+AN7 => U13                     DP => H15
+```
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 Complete the decoder truth table for common anode 7-segment display.
 
