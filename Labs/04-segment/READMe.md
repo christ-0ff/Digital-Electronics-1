@@ -198,6 +198,8 @@ LED(7)  <= '1' when (SW = "0001") else
            '1' when (SW = "1000") else
            '0';
            
+           
+-- Next "same" processes are working too... I just wanted to make copy of them on github that is more accessible than Vivado projects.           
 --    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8               
 --    p_led7 : process (SW)
 --    begin
