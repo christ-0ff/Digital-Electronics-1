@@ -231,6 +231,6 @@ LED(7)  <= '1' when (SW = "0001") else
 ```
 
 ### Screenshot of simulated time waveforms
-
+![Images](Images/2.png)
 
 
