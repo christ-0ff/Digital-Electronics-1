@@ -240,7 +240,7 @@ begin
 end Behavioral;
 ```
 
-## LED (7:4) indicators.
+## 3. LED (7:4) indicators.
 
 ### Truth table and VHDL Code
 
