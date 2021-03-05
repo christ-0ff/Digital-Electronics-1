@@ -228,9 +228,6 @@ LED(7)  <= '1' when (SW = "0001") else
 --           LED(7) <= '1';       
 --       end if;
 --   end process p_led7_2;
-
-end Behavioral;
-
 ```
 
 ### Screenshot of simulated time waveforms
