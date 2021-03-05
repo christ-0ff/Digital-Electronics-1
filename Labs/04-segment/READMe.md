@@ -189,7 +189,7 @@ LED(4) <= '1' when (SW = "0000") else '0';
 LED(5) <= '1' when (SW > "1001") else '0';
 
 -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-LED(6) <= SW(3);
+LED(6) <= SW(0);
 
 -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
 LED(7)  <= '1' when (SW = "0001") else
@@ -198,7 +198,7 @@ LED(7)  <= '1' when (SW = "0001") else
            '1' when (SW = "1000") else
            '0';
            
--- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8               
+--    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8               
 --    p_led7 : process (SW)
 --    begin
 --        case SW is
@@ -215,7 +215,7 @@ LED(7)  <= '1' when (SW = "0001") else
 --        end case;
 --    end process p_led7;
 
--- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8    
+--    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8    
 --   p_led7_2 : process (SW)
 --   begin
 --       if    (SW = "0001") then
@@ -225,7 +225,9 @@ LED(7)  <= '1' when (SW = "0001") else
 --       elsif (SW = "0100") then
 --           LED(7) <= '1';
 --       elsif (SW = "1000") then
---           LED(7) <= '1';       
+--           LED(7) <= '1';  
+--       else
+--           LED(7) <= '0';         
 --       end if;
 --   end process p_led7_2;
 ```
