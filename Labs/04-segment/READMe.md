@@ -4,7 +4,7 @@
 ## 1. Truth table  & Connections on board
 
 ### Connection of 7-segment display on Nexus board
-**Both anode and cathode signal are active-low. Therefore they are lit when logical 0 is on their input**
+**Both anode and cathode signals are active-low. Therefore they are lit when logical 0 is applied on their input**
 ```table
 AN0 => J17                     CA => T10
 AN1 => J18                     CB => R10
