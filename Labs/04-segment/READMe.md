@@ -129,7 +129,7 @@ end process p_stimulus;
 ```
 
 ### Screenshot of simulated waveforms
-![7seg_waveforms](Images/1.png)
+![7seg_waveforms](Images/3.png)
 
 ### VHDL Code from source file top.vhd
 with 7-segment module instantiation.
