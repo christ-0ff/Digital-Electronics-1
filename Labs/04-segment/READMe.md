@@ -6,15 +6,15 @@
 ### Connection of 7-segment display on Nexus board
 **Both anode and cathode signals are active-low. Therefore they are lit when logical 0 is applied on their input**
 ```table
---Number of display            --Segment of digit
-AN0 => J17                     CA => T10
-AN1 => J18                     CB => R10
-AN2 => T9                      CC => K16
-AN3 => J14                     CD => K13
-AN4 => P14                     CE => P15
-AN5 => T14                     CF => T11
-AN6 => K2                      CG => L18
-AN7 => U13                     DP => H15
+--One digit of display         --One segment of digit
+  AN0 => J17                     CA => T10
+  AN1 => J18                     CB => R10
+  AN2 => T9                      CC => K16
+  AN3 => J14                     CD => K13
+  AN4 => P14                     CE => P15
+  AN5 => T14                     CF => T11
+  AN6 => K2                      CG => L18
+  AN7 => U13                     DP => H15
 ```
 
 ### Truth table for common anode 7-segment display
