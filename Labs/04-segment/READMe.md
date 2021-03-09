@@ -6,6 +6,7 @@
 ### Connection of 7-segment display on Nexus board
 **Both anode and cathode signals are active-low. Therefore they are lit when logical 0 is applied on their input**
 ```table
+--Number of display            --Segment of digit
 AN0 => J17                     CA => T10
 AN1 => J18                     CB => R10
 AN2 => T9                      CC => K16
@@ -131,8 +132,8 @@ end process p_stimulus;
 ### Screenshot of simulated waveforms
 ![7seg_waveforms](Images/3.png)
 
-### VHDL Code from source file top.vhd
-with 7-segment module instantiation.
+### VHDL Code from source file top.vhd...
+**...with 7-segment module instantiation.**
 
 ```vhdl
 -- The code:
@@ -209,7 +210,7 @@ begin
 end Behavioral;
 ```
 
-## LED (7:4) indicators.
+## 3. LED (7:4) indicators.
 
 ### Truth table and VHDL Code
 
