@@ -25,9 +25,92 @@ BTNC => N17
    | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
 
 
-## 2.
+## 2. Bidirectional counter
 
-## 3. 
+### VHDL code of the process p_cnt_up_down
+```vhdl
+p_cnt_up_down : process(clk)
+begin
+     if rising_edge(clk) then
+     
+         if (reset = '1') then               -- Synchronous reset
+             s_cnt_local <= (others => '0'); -- Clear all bits
+
+         elsif (en_i = '1') then       -- Test if counter is enabled
+
+              if (cnt_up_i = '1') then
+                  s_cnt_local <= s_cnt_local + 1;
+              else
+                  s_cnt_local <= s_cnt_local - 1;
+              end if;   
+             
+         end if;
+         
+     end if;
+ end process p_cnt_up_down;
+```
+
+### VHDL reset and stimulus processes from testbench file tb_cnt_up_down.vhd
+```vhdl
+--------------------------------------------------------------------
+-- Reset generation process
+--------------------------------------------------------------------
+p_reset_gen : process
+begin
+    s_reset <= '1';
+    wait for 50 ns;
+    
+    -- Reset desactivated
+    s_reset <= '0';
+    wait for 185 ns;
+    
+    s_reset <= '1';
+    wait for 50 ns;
+    
+    s_reset <= '0';
+    wait for 200 ns;
+    
+    s_reset <= '1';
+    wait for 20 ns;
+
+    s_reset <= '0';
+    wait;
+end process p_reset_gen;
+
+--------------------------------------------------------------------
+-- Data generation process
+--------------------------------------------------------------------
+p_stimulus : process
+begin
+    report "Stimulus process started" severity note;
+
+    -- Enable counting
+    s_en     <= '1';
+    
+    -- Change counter direction
+    s_cnt_up <= '1';
+    wait for 380 ns;
+    s_cnt_up <= '0';
+    wait for 220 ns;
+    
+    s_cnt_up <= '1';
+    wait for 220 ns;
+    s_cnt_up <= '0';
+    wait for 380 ns;
+
+
+    -- Disable counting
+    s_en     <= '0';
+
+    report "Stimulus process finished" severity note;
+    wait;
+end process p_stimulus;
+```
+
+### Simulation screenshot
+[](Images/1.png)
+[](Images/2.png)
+## 3. Top level
 
 
 
