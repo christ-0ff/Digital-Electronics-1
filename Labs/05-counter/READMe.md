@@ -2,7 +2,7 @@
 
 
 ## 1. Connections of pins & Table with values
-**Pin connections**
+### Pin connections
 
 *Buttons are connected to 3.3V DC signal. So when not pushed they generate a low output, and when pressed, they generate high output value. Connectiona are active-high.*
 ```table
@@ -14,7 +14,7 @@ BTND => P18
 BTNC => N17
 ```
 
-**Table with calculated values**
+### Table with calculated values
    | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
    | 2&nbsp;ms | 200 000 | `x"3_0d40"` | `b"0011_0000_1101_0100_0000"` |
