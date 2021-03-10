@@ -3,6 +3,7 @@
 
 ## 1. Connection of pins & Table with values
 **Pin connection**
+
 *Buttons are connected to 3.3V DC signal. So when not pushed they generate a low output, and when pressed, they generate high output value. Connectiona are active-high.*
 ```table
 5 Buttons to 5 pins board connection:
