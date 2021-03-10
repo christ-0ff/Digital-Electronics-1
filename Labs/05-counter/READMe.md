@@ -1,8 +1,8 @@
 # 05-Counter
 
 
-## 1. Connection of pins & Table with values
-**Pin connection**
+## 1. Connections of pins & Table with values
+**Pin connections**
 
 *Buttons are connected to 3.3V DC signal. So when not pushed they generate a low output, and when pressed, they generate high output value. Connectiona are active-high.*
 ```table
