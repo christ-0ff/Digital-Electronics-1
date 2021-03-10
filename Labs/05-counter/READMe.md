@@ -108,8 +108,8 @@ end process p_stimulus;
 ```
 
 ### Simulation screenshot
-![](Images/1.png)
-![](Images/2.png)
+![](Images/4.png)
+![](Images/3.png)
 ## 3. Top level
 
 
