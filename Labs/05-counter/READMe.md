@@ -160,6 +160,11 @@ hex2seg : entity work.hex_7seg
 ```
 ### Sketches of Top layers
 **4-bit bidirectional counter**
+
+*Time base here was not precisly defined, so I guess we can choose one.*
+
 ![](Images/4bb.png)
-**16-bit counter with a 10 ms time base**
+
+**16-bit bidirectional counter with a 10 ms time base**
+
 ![](Images/16b.png)
