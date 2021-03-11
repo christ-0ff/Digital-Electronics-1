@@ -163,36 +163,3 @@ hex2seg : entity work.hex_7seg
 ![](Images/4bb.png)
 **16-bit counter with a 10 ms time base**
 ![](Images/16b.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-## Experiments on your own
-
-1. Add a second instantiation (copy) of the counter (`bin_cnt1`) and clock enable (`clk_en1`) entities and make a 16-bit counter with a different time base. Display its value on LED(15:0).
-
-
-
-
-
-3. Top level. Submit:
-    * (Hand-drawn) sketch of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a different time base from Part Experiments on your own.
-
-
