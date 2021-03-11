@@ -167,4 +167,6 @@ hex2seg : entity work.hex_7seg
 
 **16-bit bidirectional counter with a 10 ms time base**
 
+*We don't need an entity `hex_7seg`, because we connect an output from `cnt_up_down` to `LED(15:0)`. Also we do not need to assign a value to `AN` output to switch on a digit of the 7-segment display.*
+
 ![](Images/16b.png)
