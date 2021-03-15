@@ -24,8 +24,8 @@ architecture Behavioral of tb_top is
      signal s_CF        : STD_LOGIC;
      signal s_CG        : STD_LOGIC;
      --
---     signal s_LED       : STD_LOGIC_VECTOR (4 - 1 downto 0);
-     signal s_LED       : STD_LOGIC_VECTOR (16 - 1 downto 0);
+ --    signal s_LED       : STD_LOGIC_VECTOR (4 - 1 downto 0);
+     signal s_LED1      : STD_LOGIC_VECTOR (16 - 1 downto 0);
      signal s_AN        : STD_LOGIC_VECTOR (8 - 1 downto 0);    
       
 begin
@@ -45,7 +45,8 @@ begin
          CF  =>  s_CF,  
          CG  =>  s_CG,  
                 
-         LED =>  s_LED,
+ --        LED =>  s_LED,
+         LED1=>  s_LED1,
          AN  =>  s_AN
        );
        

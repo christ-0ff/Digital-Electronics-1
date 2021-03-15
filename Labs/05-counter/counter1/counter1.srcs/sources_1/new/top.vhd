@@ -38,7 +38,7 @@ entity top is
            SW        : in STD_LOGIC_VECTOR (1 - 1 downto 0);
            --
 --           LED       : out STD_LOGIC_VECTOR (4 - 1 downto 0);
-           LED       : out STD_LOGIC_VECTOR (16 - 1 downto 0);
+           LED1      : out STD_LOGIC_VECTOR (16 - 1 downto 0);
            CA        : out STD_LOGIC;
            CB        : out STD_LOGIC;
            CC        : out STD_LOGIC;
@@ -57,57 +57,57 @@ architecture Behavioral of top is
     -- Internal clock enable
     signal s_en  : std_logic;
     -- Internal counter
---    signal s_cnt : std_logic_vector(4 - 1 downto 0);
-    signal s_cnt : std_logic_vector(16 - 1 downto 0);
+    signal s_cnt  : std_logic_vector(4 - 1 downto 0);
+    signal s_cnt1 : std_logic_vector(16 - 1 downto 0);
 
 begin
---    --4-bit counter to 7-segment and 4 LEDs
---    --------------------------------------------------------------------
---    -- Instance (copy) of clock_enable entity
---    clk_en0 : entity work.clock_enable
---        generic map(
---            g_MAX => 2
---        )
---        port map(
---            clk   => CLK100MHZ,
---            reset => BTNC,
---            ce_o  => s_en
---        );
+    --4-bit counter to 7-segment and 4 LEDs
+    --------------------------------------------------------------------
+    -- Instance (copy) of clock_enable entity
+    clk_en0 : entity work.clock_enable
+        generic map(
+            g_MAX => 2
+        )
+        port map(
+            clk   => CLK100MHZ,
+            reset => BTNC,
+            ce_o  => s_en
+        );
 
---    --------------------------------------------------------------------
---    -- Instance (copy) of cnt_up_down entity
---    bin_cnt0 : entity work.cnt_up_down
---        generic map(
---            g_CNT_WIDTH => 4
---        )
---        port map(
---            clk      => CLK100MHZ,
---            reset    => BTNC,
---            en_i     => s_en,
---            cnt_up_i => SW(0),
---            cnt_o    => s_cnt
---        );          
+    --------------------------------------------------------------------
+    -- Instance (copy) of cnt_up_down entity
+    bin_cnt0 : entity work.cnt_up_down
+        generic map(
+            g_CNT_WIDTH => 4
+        )
+        port map(
+            clk      => CLK100MHZ,
+            reset    => BTNC,
+            en_i     => s_en,
+            cnt_up_i => SW(0),
+            cnt_o    => s_cnt
+        );          
 
---    -- Display input value on LEDs
+    -- Display input value on LEDs
 --    LED(3 downto 0) <= s_cnt;
     
 
---    --------------------------------------------------------------------
---    -- Instance (copy) of hex_7seg entity
---    hex2seg : entity work.hex_7seg
---        port map(
---            hex_i    => s_cnt,
---            seg_o(6) => CA,
---            seg_o(5) => CB,
---            seg_o(4) => CC,
---            seg_o(3) => CD,
---            seg_o(2) => CE,
---            seg_o(1) => CF,
---            seg_o(0) => CG
---        );
+    --------------------------------------------------------------------
+    -- Instance (copy) of hex_7seg entity
+    hex2seg : entity work.hex_7seg
+        port map(
+            hex_i    => s_cnt,
+            seg_o(6) => CA,
+            seg_o(5) => CB,
+            seg_o(4) => CC,
+            seg_o(3) => CD,
+            seg_o(2) => CE,
+            seg_o(1) => CF,
+            seg_o(0) => CG
+        );
 
---    -- Connect one common anode to 3.3V
---    AN <= b"1111_1110";
+    -- Connect one common anode to 3.3V
+    AN <= b"1111_1110";
     
     --16-bit counter to LEDs
     --------------------------------------------------------------------
@@ -133,11 +133,11 @@ begin
             reset    => BTNC,
             en_i     => s_en,
             cnt_up_i => SW(0),
-            cnt_o    => s_cnt
+            cnt_o    => s_cnt1
         );          
 
     -- Display input value on LEDs
-    LED(16 - 1 downto 0) <= s_cnt;
+    LED1(16 - 1 downto 0) <= s_cnt1;
  
 
 end architecture Behavioral;
