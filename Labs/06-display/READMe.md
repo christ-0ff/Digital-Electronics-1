@@ -1,9 +1,9 @@
 # 05-Display Driver
 
 
-## 1. Timing diagram figure for displaying value `3.142.`
+## 1. Timing diagram figure for displaying value `3.142`
 
-![](Images/wave.png)
+![](Images/waves.png)
 
 
 ## 2. Display driver
