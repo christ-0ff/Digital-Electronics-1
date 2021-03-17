@@ -193,11 +193,11 @@ end architecture testbench;
 
 **The `3.142` number**
 
-![](Images/wave.png)
+![](Images/1.png)
 
 **Test values**
 
-![](Images/wave.png)
+![](Images/2.png)
 
 ### Listing of VHDL architecture of the top layer
 ```vhdl
