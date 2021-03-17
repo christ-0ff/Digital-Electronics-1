@@ -254,3 +254,4 @@ end architecture Behavioral;
 
 ## 3. Eight-digit driver
 
+![](Images/driver.png)
