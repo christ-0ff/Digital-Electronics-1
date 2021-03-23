@@ -1,4 +1,4 @@
-# 05-Display Driver
+# 06-Display Driver
 
 
 ## 1. Timing diagram figure for displaying value `3.142`
