@@ -27,7 +27,7 @@ Write characteristic equations and complete truth tables for D, JK, T flip-flops
    | 0 | 0 | Previous State | No Change |
    | 0 | 1 | 0 | Reset |
    | 1 | 0 | 1 | Set |
-   | 1 | 1 | 0 | No Change |
+   | 1 | 1 | 1	 | No Change |
 
    | **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
