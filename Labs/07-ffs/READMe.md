@@ -2,7 +2,7 @@
 
 ## 1. Characteristic equations and tables for flip-flops.
 
-### Tables of D, JK, T flip-flops.
+### Tables of D, JK, T flip-flops and characteristic equations
 
 **D flip-flop**
 
@@ -12,6 +12,8 @@
    | 0 | 1 | 0 | Reset |
    | 1 | 0 | 1 | Set |
    | 1 | 1 | 1 | No Change |
+
+![](Images/1.png)
 
 **JK flip-flop**
 
@@ -26,6 +28,8 @@
    | 1 | 1 | 0 | 1 | Toggle |
    | 1 | 1 | 1 | 0 | Toggle |
 
+![](Images/2.png)
+
 **T flip-flop**
    
    | **T** | **Qn** | **Q(n+1)** | **Comments** |
@@ -35,9 +39,7 @@
    | 1 | 0 | 1 | Invert |
    | 1 | 1 | 0 | Invert |
 
-### Characteristic equations
-
-![](Images/rov.png)
+![](Images/3.png)
 
 ## 2. D Latch
 
