@@ -8,7 +8,7 @@
 
    | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
-   | 0 | 0 | Previous State | No Change |
+   | 0 | 0 | 0 | No Change |
    | 0 | 1 | 0 | Reset |
    | 1 | 0 | 1 | Set |
    | 1 | 1 | 1 | No Change |
