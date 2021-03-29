@@ -191,7 +191,7 @@ begin
 end process p_stimulus;
 ```
 
-### Screenshot with simulated time waveforms
+### Screenshot with simulated time waveforms of `p_d_latch`
 ![](Images/w1.png)
 
 
@@ -218,7 +218,7 @@ begin
 end process p_d_ff_arst;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench**
+**VHDL code of the clock, reset and stimulus process from the testbench `tb_d_ff_arst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -311,7 +311,7 @@ begin
 end process p_stimulus;
 ```
 
-**Simulated waveforms screenshot**
+**Simulated waveforms screenshot `d_ff_arst`**
 
 ![](Images/d_ff_arst.png)
 
@@ -342,7 +342,7 @@ end process p_d_ff_rst;
     q_bar <= not s_q;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench**
+**VHDL code of the clock, reset and stimulus process from the testbench `tb_d_ff_rst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -441,7 +441,7 @@ begin
 end process p_stimulus;
 ```
 
-**Simulated waveforms screenshot**
+**Simulated waveforms screenshot `d_ff_rst`**
 
 ![](Images/d_ff_rst.png)
 
@@ -478,7 +478,7 @@ end process p_jk_ff_rst;
     q_bar <= not s_q;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench**
+**VHDL code of the clock, reset and stimulus process from the testbench  `tb_jk_ff_rst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -574,7 +574,7 @@ begin
 end process p_stimulus;
 ```
 
-**Simulated waveforms screenshot**
+**Simulated waveforms screenshot  `jk_ff_rst`**
 
 ![](Images/jk_ff_rst.png)
 
@@ -607,7 +607,7 @@ end process p_t_ff_rst;
     q_bar <= not s_q;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench**
+**VHDL code of the clock, reset and stimulus process from the testbench  `tb_t_ff_rst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -691,7 +691,7 @@ begin
 end process p_stimulus;     
 ```
 
-**Simulated waveforms screenshot**
+**Simulated waveforms screenshot  `t_ff_rst`**
 
 ![](Images/t_ff_rst.png)
 
