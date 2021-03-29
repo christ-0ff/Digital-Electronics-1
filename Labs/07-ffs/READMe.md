@@ -43,7 +43,7 @@
 
 ## 2. D Latch
 
-**VHDL code listing of the process `p_d_latch`**
+### VHDL code listing of the process `p_d_latch`
 ```vhdl
 p_d_latch : process(d, arst, en)
 begin
@@ -59,7 +59,7 @@ begin
 end process p_d_latch;
 ```
 
-**Listing of VHDL reset and stimulus processes from the testbench file `tb_d_latch.vhd`**
+### Listing of VHDL reset and stimulus processes from the testbench file `tb_d_latch.vhd`
 ```vhdl
 --------------------------------------------------------------------
 -- Reset generation process
@@ -190,23 +190,92 @@ begin
 end process p_stimulus;
 ```
 
-**Screenshot with simulated time waveforms**
+### Screenshot with simulated time waveforms
 ![](Images/w1.png)
 
 
 ## 3. Flip-Flops
 
-**VHDL code listing of the processes p_d_ff_arst, p_d_ff_rst, p_jk_ff_rst, p_t_ff_rst with syntax highlighting,**
+
+### Asynchronous D flip-flop - `d_ff_arst`
+
+**VHDL code of the process `p_d_ff_arst`**
+
+```vhdl
+p_d_ff_arst : process(clk, arst)
+begin     
+
+         if (arst = '1') then        
+              q     <= '0';
+              q_bar <= '1';
+              
+         elsif rising_edge(clk) then       
+              q     <= d;
+              q_bar <= not d;    
+         end if;    
+            
+end process p_d_ff_arst;
+```
+
+**VHDL code of the clock, reset and stimulus process from the testbench**
+
 ```vhdl
 ```
 
-**Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts,**
+**Simulated waveforms screenshot**
+
+![](Images/d_ff_arst.png)
+
+### Synchronous D flip-flop - `d_ff_rst`
+
+**VHDL code of the process `p_d_ff_rst`**
+
 ```vhdl
 ```
 
-**Screenshot with simulated time waveforms**
+**VHDL code of the clock, reset and stimulus process from the testbench**
+
+```vhdl
+```
+
+**Simulated waveforms screenshot**
+
+![](Images/d_ff_rst.png)
+
+### Synchronous JK flip-flop - `jk_ff_rst`
+
+**VHDL code of the process `p_jk_ff_rst`**
+
+```vhdl
+```
+
+**VHDL code of the clock, reset and stimulus process from the testbench**
+
+```vhdl
+```
+
+**Simulated waveforms screenshot**
+
+![](Images/jk_ff_rst.png)
+
+### Synchronous T flip-flop - `t_ff_rst`
+
+**VHDL code of the process `p_t_ff_rst`**
+
+```vhdl
+```
+
+**VHDL code of the clock, reset and stimulus process from the testbench**
+
+```vhdl
+```
+
+**Simulated waveforms screenshot**
+
+![](Images/t_ff_rst.png)
+
 
 ## 4. Shift Register
 
-**Image of the shift register schematic.**
+### Image of the shift register schematic.
 ![](Images/.png)
