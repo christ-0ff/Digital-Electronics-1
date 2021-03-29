@@ -698,5 +698,5 @@ end process p_stimulus;
 
 ## 4. Shift Register
 
-### Image of the shift register schematic.
-![](Images/.png)
+### Image of the shift register schematic
+![](Images/schem.png)
