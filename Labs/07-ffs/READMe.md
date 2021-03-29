@@ -43,7 +43,7 @@
 
 ## 2. D Latch
 
-### VHDL code listing of the process `p_d_latch`
+**VHDL code listing of the process `p_d_latch`**
 ```vhdl
 p_d_latch : process(d, arst, en)
 begin
@@ -59,7 +59,7 @@ begin
 end process p_d_latch;
 ```
 
-### Listing of VHDL reset and stimulus processes from the testbench file `tb_d_latch.vhd`
+**Listing of VHDL reset and stimulus processes from the testbench file `tb_d_latch.vhd`**
 ```vhdl
 --------------------------------------------------------------------
 -- Reset generation process
@@ -191,7 +191,7 @@ begin
 end process p_stimulus;
 ```
 
-### Screenshot with simulated time waveforms of `p_d_latch`
+**Screenshot with simulated time waveforms of `p_d_latch`**
 ![](Images/w1.png)
 
 
