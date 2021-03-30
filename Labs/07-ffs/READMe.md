@@ -2,7 +2,7 @@
 
 ## 1. Characteristic equations and tables for flip-flops.
 
-### Tables of D, JK, T flip-flops and characteristic equations
+### Tables of D, JK, T flip-flops and characteristic their equations
 
 **D flip-flop**
 
@@ -59,7 +59,7 @@ begin
 end process p_d_latch;
 ```
 
-**Listing of VHDL reset and stimulus processes from the testbench file `tb_d_latch.vhd`**
+**Listing of VHDL reset and stimulus processes from the testbench file `tb_d_latch`**
 ```vhdl
 --------------------------------------------------------------------
 -- Reset generation process
@@ -218,7 +218,7 @@ begin
 end process p_d_ff_arst;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench `tb_d_ff_arst`**
+**VHDL code of the clock, reset and stimulus process from the testbench file `tb_d_ff_arst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -311,7 +311,7 @@ begin
 end process p_stimulus;
 ```
 
-**Simulated waveforms screenshot `d_ff_arst`**
+**Screenshot with simulated time waveforms of `d_ff_arst`**
 
 ![](Images/d_ff_arst.png)
 
@@ -342,7 +342,7 @@ end process p_d_ff_rst;
     q_bar <= not s_q;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench `tb_d_ff_rst`**
+**VHDL code of the clock, reset and stimulus process from the testbench file `tb_d_ff_rst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -441,7 +441,7 @@ begin
 end process p_stimulus;
 ```
 
-**Simulated waveforms screenshot `d_ff_rst`**
+**Screenshot with simulated time waveforms of `d_ff_rst`**
 
 ![](Images/d_ff_rst.png)
 
@@ -478,7 +478,7 @@ end process p_jk_ff_rst;
     q_bar <= not s_q;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench  `tb_jk_ff_rst`**
+**VHDL code of the clock, reset and stimulus process from the testbench file `tb_jk_ff_rst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -574,7 +574,7 @@ begin
 end process p_stimulus;
 ```
 
-**Simulated waveforms screenshot  `jk_ff_rst`**
+**Screenshot with simulated time waveforms of `jk_ff_rst`**
 
 ![](Images/jk_ff_rst.png)
 
@@ -607,7 +607,7 @@ end process p_t_ff_rst;
     q_bar <= not s_q;
 ```
 
-**VHDL code of the clock, reset and stimulus process from the testbench  `tb_t_ff_rst`**
+**VHDL code of the clock, reset and stimulus process from the testbench file  `tb_t_ff_rst`**
 
 ```vhdl
 --------------------------------------------------------------------
@@ -691,7 +691,7 @@ begin
 end process p_stimulus;     
 ```
 
-**Simulated waveforms screenshot  `t_ff_rst`**
+**Screenshot with simulated time waveforms of  `t_ff_rst`**
 
 ![](Images/t_ff_rst.png)
 
@@ -699,4 +699,4 @@ end process p_stimulus;
 ## 4. Shift Register
 
 ### Image of the shift register schematic
-![](Images/schem.png)
+![](Images/schem1.png)
