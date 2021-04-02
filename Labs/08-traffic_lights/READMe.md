@@ -40,7 +40,7 @@
 |||||Sensor = `"00"`, `"11"` ,`"01"` => Next State = `WEST_GO`|
 | `WEST_GO`    | red    | green | 4 sec | `WEST_WAIT` |
 | `WEST_WAIT`  | red    | yellow | 2 sec | `STOP2` |
-| `STOP2`      | red    | red | 1 sec | &nbsp;&nbsp;&nbsp;Sensor = `"01"` => Next State = `WEST_GO`,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sensor = `"00"`, `"11"` ,`"10"` => Next State = `SOUTH_GO` |
+| `STOP2`      | red    | red | 1 sec | Sensor = `"01"` => Next State = `WEST_GO`, Sensor = `"00"` |
 |||||Sensor = `"00"`, `"11"` ,`"10"` => Next State = `SOUTH_GO`|
 | `SOUTH_GO`   | green  | red | 4 sec | `SOUTH_WAIT` |
 | `SOUTH_WAIT` | yellow | red | 2 sec | `STOP1` |
