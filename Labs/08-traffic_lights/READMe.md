@@ -192,7 +192,7 @@ begin
                     if (s_cnt < c_DELAY_1SEC) then
                          s_cnt <= s_cnt + 1;
                     else
-                        if (sensor = "01") then
+                        if (sensor_state = "01") then
                             s_state <= SOUTH_GO;
                         else
                             -- Move to the next state
@@ -230,7 +230,7 @@ begin
                     if (s_cnt < c_DELAY_1SEC) then
                         s_cnt <= s_cnt + 1;
                     else
-                        if (sensor = "10") then
+                        if (sensor_state = "10") then
                             s_state <= WEST_GO;
                         else
                             -- Move to the next state
