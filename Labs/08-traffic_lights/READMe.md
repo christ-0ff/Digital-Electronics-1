@@ -34,6 +34,14 @@
 ![](Images/waves.png)
 ## 3. Smart controller
 ### State table
+| **Current state** | **Direction South** | **Direction West** | **Delay** | **Next State based on sensor input** |
+| :-- | :-: | :-: | :-: | :-: |
+| `STOP1`      | red    | red | 1 sec | Sensor = `"10"` => Next State = `SOUTH_GO`|
+| `WEST_GO`    | red    | green | 4 sec | :-: |
+| `WEST_WAIT`  | red    | yellow | 2 sec | :-: |
+| `STOP2`      | red    | red | 1 sec | Sensor = `"01"` => Next State = `WEST_GO` |
+| `SOUTH_GO`   | green  | red | 4 sec | :-: |
+| `SOUTH_WAIT` | yellow | red | 2 sec | :-: |
 ### State diagram
 ### Listing of VHDL code of sequential process `p_smart_traffic_fsm`
 ```vhdl
