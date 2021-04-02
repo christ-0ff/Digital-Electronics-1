@@ -46,6 +46,7 @@
 | `SOUTH_GO`   | green  | red | 4 sec | `SOUTH_WAIT` |
 | `SOUTH_WAIT` | yellow | red | 2 sec | `STOP1` |
 ### State diagram
+![](Images/dia2.png)
 ### Listing of VHDL code of sequential process `p_smart_traffic_fsm`
 ```vhdl
 ```
