@@ -37,12 +37,12 @@
 ### State table
 | **Current state** | **Direction South** | **Direction West** | **Delay** | **Next State based on sensor input** |
 | :-- | :-: | :-: | :-: | :-: |
-| `STOP1`      | red    | red | 1 sec | Sensor = `"10"` => Next State = `SOUTH_GO`|
-|||||Sensor = `"00"`, `"11"` ,`"01"` => Next State = `WEST_GO`|
+| `STOP1`      | red    | red | 1 sec | Sensor = `"01"` => Next State = `SOUTH_GO`|
+|||||Sensor = `"00"`, `"11"` ,`"10"` => Next State = `WEST_GO`|
 | `WEST_GO`    | red    | green | 4 sec | `WEST_WAIT` |
 | `WEST_WAIT`  | red    | yellow | 2 sec | `STOP2` |
-| `STOP2`      | red    | red | 1 sec | Sensor = `"01"` => Next State = `WEST_GO` |
-|||||Sensor = `"00"`, `"11"` ,`"10"` => Next State = `SOUTH_GO`|
+| `STOP2`      | red    | red | 1 sec | Sensor = `"10"` => Next State = `WEST_GO` |
+|||||Sensor = `"00"`, `"11"` ,`"01"` => Next State = `SOUTH_GO`|
 | `SOUTH_GO`   | green  | red | 4 sec | `SOUTH_WAIT` |
 | `SOUTH_WAIT` | yellow | red | 2 sec | `STOP1` |
 ### State diagram
