@@ -24,6 +24,7 @@
 
 ## 2. Traffic light controller
 ### State diagram
+![](Images/dia.png)
 ### Listing of VHDL code of sequential process `p_traffic_fsm`
 ```vhdl
 ```
