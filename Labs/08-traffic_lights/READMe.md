@@ -39,8 +39,8 @@
 | `STOP1`      | red    | red | 1 sec | Sensor = `"10"` => Next State = `SOUTH_GO`|
 | `WEST_GO`    | red    | green | 4 sec | `WEST_WAIT` |
 | `WEST_WAIT`  | red    | yellow | 2 sec | `STOP2` |
-| `STOP2`      | red    | red | 1 sec | Sensor = `"01"` => Next State = `WEST_GO` 
-Sensor = `"01"` => Next State = `WEST_GO`|
+| `STOP2`      | red    | red | 1 sec | Sensor = `"01"` => Next State = `WEST_GO` |
+|||||Sensor = `"01"` => Next State = `WEST_GO`|
 | `SOUTH_GO`   | green  | red | 4 sec | `SOUTH_WAIT` |
 | `SOUTH_WAIT` | yellow | red | 2 sec | `STOP1` |
 ### State diagram
