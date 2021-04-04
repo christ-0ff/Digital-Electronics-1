@@ -192,9 +192,10 @@ begin
                     if (s_cnt < c_DELAY_1SEC) then
                          s_cnt <= s_cnt + 1;
                     else
-                        if (sensor_state = "01") then
-                            s_state <= SOUTH_GO;
-                            s_cnt   <= c_ZERO;
+                        -- Move to SOUTH_GO if there are cars on NORTH side to let through... 
+                        if (sensor_state = "01") then 
+                            s_state <= SOUTH_GO;      
+                            s_cnt   <= c_ZERO;        
                         else
                             -- Move to the next state
                             s_state <= WEST_GO;
@@ -227,13 +228,13 @@ begin
                     
                 when STOP2 =>
                     -- Count up to c_DELAY_1SEC
-
                     if (s_cnt < c_DELAY_1SEC) then
                         s_cnt <= s_cnt + 1;
                     else
-                        if (sensor_state = "10") then
-                            s_state <= WEST_GO;
-                            s_cnt   <= c_ZERO;
+                        -- Move to WEST_GO if there are cars on EAST side to let through... 
+                        if (sensor_state = "10") then 
+                            s_state <= WEST_GO;           
+                            s_cnt   <= c_ZERO;        
                         else
                             -- Move to the next state
                             s_state <= SOUTH_GO;
@@ -263,7 +264,6 @@ begin
                         -- Reset local counter value
                         s_cnt   <= c_ZERO;
                     end if;
-
 
                 -- It is a good programming practice to use the 
                 -- OTHERS clause, even if all CASE choices have 
