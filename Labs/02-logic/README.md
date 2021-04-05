@@ -69,7 +69,7 @@ https://www.edaplayground.com/x/74HF
 
 
 
-## 3. A 4-bit comparator:
+## 3. A 4-bit comparator
 
 1. **Design - Entity declaration & Architecture body** 
 
