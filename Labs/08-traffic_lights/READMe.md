@@ -119,7 +119,7 @@ begin
      end if; -- Rising edge
 end process p_traffic_fsm;
 ```
-### L isting of VHDL code of combinatorial process `p_output_fsm`
+### Listing of VHDL code of combinatorial process `p_output_fsm`
 ```vhdl
 p_output_fsm : process(s_state)
 begin
