@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 16 19:45:30 2021
+# Process ID: 6644
+# Current directory: C:/Users/krystufek/Desktop/PS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8148 C:\Users\krystufek\Desktop\PS\PS.xpr
+# Log file: C:/Users/krystufek/Desktop/PS/vivado.log
+# Journal file: C:/Users/krystufek/Desktop/PS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/krystufek/Desktop/PS/PS.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/distance_comparator.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/parking_assistant_6sensor.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/beep_generator.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/mux_2bit_6to1.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/urm_driver_decoder.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/top.vhd}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_top.vhd w ]
+add_files -fileset sim_1 C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_top.vhd
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_urm_driver_decoder.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_beep_generator.vhd}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_parking_assistant_6sensor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_parking_assistant_6sensor.tcl
+close_sim
+launch_simulation
+source tb_parking_assistant_6sensor.tcl
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {50ms} -objects [get_filesets sim_1]
+relaunch_sim
+close_sim
+launch_simulation
+source tb_parking_assistant_6sensor.tcl
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/tb_parking_assistant_6sensor/uut_parking_assistant_6sensor/tone_gen_data_i}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

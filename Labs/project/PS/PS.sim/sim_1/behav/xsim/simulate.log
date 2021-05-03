@@ -1,0 +1,6 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 75336 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd

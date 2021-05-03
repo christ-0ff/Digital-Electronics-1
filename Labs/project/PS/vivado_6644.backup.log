@@ -1,0 +1,622 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 16 19:45:30 2021
+# Process ID: 6644
+# Current directory: C:/Users/krystufek/Desktop/PS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8148 C:\Users\krystufek\Desktop\PS\PS.xpr
+# Log file: C:/Users/krystufek/Desktop/PS/vivado.log
+# Journal file: C:/Users/krystufek/Desktop/PS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/krystufek/Desktop/PS/PS.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/krystufek/Desktop/PS/PS.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APPZ/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1006.188 ; gain = 0.000
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/distance_comparator.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/parking_assistant_6sensor.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/beep_generator.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/mux_2bit_6to1.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/urm_driver_decoder.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/top.vhd}
+WARNING: [filemgmt 56-12] File 'C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/top.vhd' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+file mkdir C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_top.vhd w ]
+add_files -fileset sim_1 C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_top.vhd
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_urm_driver_decoder.vhd C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_beep_generator.vhd}
+update_compile_order -fileset sim_1
+set_property top tb_parking_assistant_6sensor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/beep_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'beep_generator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/distance_comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'distance_comparator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/urm_driver_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'urm_driver_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'parking_assistant_6sensor'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim/xsim.dir/tb_parking_assistant_6sensor_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 116.262 ; gain = 17.602
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 16 19:49:20 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1006.188 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_parking_assistant_6sensor_behav -key {Behavioral:sim_1:Functional:tb_parking_assistant_6sensor} -tclbatch {tb_parking_assistant_6sensor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_parking_assistant_6sensor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_parking_assistant_6sensor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 1006.188 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1006.188 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sources_1/new/parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'parking_assistant_6sensor'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_parking_assistant_6sensor_behav -key {Behavioral:sim_1:Functional:tb_parking_assistant_6sensor} -tclbatch {tb_parking_assistant_6sensor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_parking_assistant_6sensor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_parking_assistant_6sensor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1006.188 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\krystufek\Desktop\PS\PS.srcs\sim_1\new\tb_parking_assistant_6sensor.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\krystufek\Desktop\PS\PS.srcs\sources_1\new\parking_assistant_6sensor.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\krystufek\Desktop\PS\PS.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\krystufek\Desktop\PS\PS.srcs\sim_1\new\tb_parking_assistant_6sensor.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\krystufek\Desktop\PS\PS.srcs\sources_1\new\parking_assistant_6sensor.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\krystufek\Desktop\PS\PS.srcs\sources_1\new\top.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property -name {xsim.simulate.runtime} -value {50ms} -objects [get_filesets sim_1]
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1006.188 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_parking_assistant_6sensor_behav -key {Behavioral:sim_1:Functional:tb_parking_assistant_6sensor} -tclbatch {tb_parking_assistant_6sensor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_parking_assistant_6sensor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50ms
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 34880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 41880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 44180 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48380 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48680 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+run: Time (s): cpu = 00:00:46 ; elapsed = 00:01:00 . Memory (MB): peak = 1006.188 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:49 ; elapsed = 00:01:03 . Memory (MB): peak = 1006.188 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_parking_assistant_6sensor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50ms
+launch_simulation: Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 34880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 41880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 44180 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48380 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48680 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:56 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 1006.188 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/tb_parking_assistant_6sensor/uut_parking_assistant_6sensor/tone_gen_data_i}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 34880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 41880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 44180 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48380 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48680 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:00:39 ; elapsed = 00:00:57 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:40 ; elapsed = 00:01:02 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 34880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 41880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 44180 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48380 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48680 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:00:39 ; elapsed = 00:00:57 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_parking_assistant_6sensor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_parking_assistant_6sensor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_parking_assistant_6sensor'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/krystufek/Desktop/PS/PS.sim/sim_1/behav/xsim'
+"xelab -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [beep_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(tone_...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus3  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 34880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus5  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 41880 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus2  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 44180 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus1  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48380 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus4  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+Note: Stimulus process finished
+Time: 48680 us  Iteration: 0  Process: /tb_parking_assistant_6sensor/p_stimulus0  File: C:/Users/krystufek/Desktop/PS/PS.srcs/sim_1/new/tb_parking_assistant_6sensor.vhd
+run: Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:00:41 ; elapsed = 00:01:01 . Memory (MB): peak = 1006.188 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:42 ; elapsed = 00:01:07 . Memory (MB): peak = 1006.188 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 16 20:46:35 2021...

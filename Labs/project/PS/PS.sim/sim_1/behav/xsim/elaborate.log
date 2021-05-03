@@ -1,0 +1,22 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ca2f7cd4e7fb42ea9f04f1a5f5ac0ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_parking_assistant_6sensor_behav xil_defaultlib.tb_parking_assistant_6sensor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.urm_driver_decoder [urm_driver_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.distance_comparator [distance_comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.beep_generator [\beep_generator(tone_freq=3000,s...]
+Compiling architecture behavioral of entity xil_defaultlib.mux_2bit_6to1 [mux_2bit_6to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [clock_enable_default]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.parking_assistant_6sensor [\parking_assistant_6sensor(g_ton...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_parking_assistant_6sensor
+Built simulation snapshot tb_parking_assistant_6sensor_behav

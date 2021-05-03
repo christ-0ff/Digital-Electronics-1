@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 16 21:27:19 2021
+# Process ID: 4940
+# Current directory: C:/Users/krystufek/Desktop/PS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent712 C:\Users\krystufek\Desktop\PS\PS.xpr
+# Log file: C:/Users/krystufek/Desktop/PS/vivado.log
+# Journal file: C:/Users/krystufek/Desktop/PS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/krystufek/Desktop/PS/PS.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/krystufek/Desktop/PS/PS.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APPZ/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.250 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 16 21:40:42 2021...
