@@ -23,8 +23,15 @@ Our aim was to made parking assistant with HC-SR04 ultrasonic sensor, sound sign
 ## Hardware description
 The project is about parking assistant with 6 sensors (3 in front & 3 at the back). It measures distance in the front side and the back side - these sides measure at the same time and the sensors are switching among left, center and right side, but only one sensor works so they do not interfere each other. Distance, which is detected by each sensor, is signalized with LED bargraph. For every gained distance by sensors, there is also tone signalization that makes sound of "beep beep" when the closest target is present.
 
-### VHDL design for parking assistant 
 
+The description of hardware is pictured in the block diagram. 
+
+If you can not see this image properly, there is a pdf file called Project_PS.pdf --> [Link](https://github.com/Zuzanaczm/Digital-electronics-1/blob/main/Labs/project/Project_PS.pdf)
+
+![Images](images/block_diagram.png)
+
+
+### VHDL design for parking assistant 
 
 #### 1.Park assistant
 
@@ -1015,8 +1022,6 @@ TOP module is designed for connecting code signal to pins of `Arty-A7-100` but i
 
 ## Video
 
-
-
 ## References
 
 
@@ -1030,3 +1035,4 @@ And to be sure we watched first few minutes of this video where the man explains
 
 
 [Explaining ultrasonic sensor](https://www.youtube.com/watch?v=6F1B_N6LuKw&t=100s) - ```https://www.youtube.com/watch?v=6F1B_N6LuKw&t=100s```
+
