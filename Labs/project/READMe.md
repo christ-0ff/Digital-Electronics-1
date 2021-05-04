@@ -1016,8 +1016,14 @@ TOP module is designed for connecting code signal to pins of `Arty-A7-100` but i
 
 ## References
 
+
 We used this reference manual to find out how the sensors work...
-[Reference manual](https://www.gie.com.my/download/um/modules/sensor/um_hc_sr04.pdf)
+
+
+[Reference manual](https://www.gie.com.my/download/um/modules/sensor/um_hc_sr04.pdf) - ```https://www.gie.com.my/download/um/modules/sensor/um_hc_sr04.pdf```
+
 
 And to be sure we watched first few minutes of this video where the man explains how to sensor work in details.
-[Explaining ultrasonic sensor](https://www.youtube.com/watch?v=6F1B_N6LuKw&t=100s)
+
+
+[Explaining ultrasonic sensor](https://www.youtube.com/watch?v=6F1B_N6LuKw&t=100s) - ```https://www.youtube.com/watch?v=6F1B_N6LuKw&t=100s```
